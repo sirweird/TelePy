@@ -14,6 +14,23 @@
    aria-label="Search through site content">
   <button>Search</button>
 </form>
+
+<button onclick="myFunction()">Upload a video</button>
+
+<p id="demo"></p>
+
+    
+    <script>
+function myFunction() {
+  let person = prompt("Please enter the link of your video", "");
+  if (person != null) {
+<video width="320" height="240" controls>
+  <source src="" type="video/mp4">
+</video>
+  }
+}
+</script>
+
   </center>
 </body>
 
