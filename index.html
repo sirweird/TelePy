@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-
 <head>
-<title>TelePy</title>
+  <title>TelePy</title>
 </head>
-
 <body>
   <center>
-<h1>TelePy</h1>
-<h3>Do anything you can.</h3>
-<form id="form" role="search">
-  <input type="search" id="query" name="q"
-   placeholder="Search..."
-   aria-label="Search through site content">
-  <button>Search</button>
-</form>
-
-<button onclick="myFunction()">Upload a video</button>
-
-<p id="demo"></p>
-
-    
-<script>
-function myFunction() {
-  let person = prompt("Please enter the link of your video", "link here!");
-  if (person != null) {
-document.getElementById("demo").innerHTML =
-<video width="320" height="240" controls>
-  <source src=person>
-</video>;
-  }
-}
-</script>
-
+    <h1>TelePy</h1>
+    <h3>Do anything you can.</h3>
+    <form id="form" role="search">
+      <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+      <button>Search</button>
+    </form>
+    <button onclick="myFunction()">Upload a video</button>
+    <p id="demo"></p>
+    <script>
+      function myFunction() {
+        let person = prompt("Please enter the link of your video", "link here!");
+        if (person != null) {
+          document.getElementById("demo").innerHTML = `<video width="320" height="240" controls><source src=${person}></video>`;
+        };
+      };
+    </script>
   </center>
 </body>
-
 </html>
